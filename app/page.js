@@ -1,5 +1,7 @@
 import Alert from '@/components/Alert (1)'
+import Carousel from '@/components/Carousel'
 import Navbar from '@/components/Navbar'
+
 import React from 'react'
 
 function Home() {
@@ -7,6 +9,8 @@ function Home() {
     <div>
       <Alert />
       <Navbar />
+      <Carousel />
+      
     </div>
   )
 }

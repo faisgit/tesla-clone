@@ -10,7 +10,7 @@ const Navbar = () => {
   const [position, setPosition] = useState("")
 
   return (
-    <div>
+    <div className="text-white font-bold">
       <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-16">
         <div className="w-[100px] h-[30px] relative">
           <Link href="/">
