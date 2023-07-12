@@ -4,14 +4,18 @@ import { useState } from "react";
 import Image from "next/image";
 import logo from "../public/tesla-logo.svg";
 import CloseIcon from "@mui/icons-material/Close";
+import Link from "next/link";
 const Navbar = () => {
   const [display, setDisplay] = useState("hidden");
+  const [position, setPosition] = useState("")
 
   return (
     <div>
-      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent">
+      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-16">
         <div className="w-[100px] h-[30px] relative">
-          <Image src={logo} alt="User Image" fill className="invert-[100]" />
+          <Link href="/">
+            <Image src={logo} alt="User Image" fill className="invert-[100]" />
+          </Link>
         </div>
         <div>
           <ul className=" hidden xl:flex justify-between items-center">
@@ -33,6 +37,7 @@ const Navbar = () => {
               onClick={() => {
                 if (display == "hidden") {
                   setDisplay("block");
+                  setPosition("fixed")
                 }
               }}
             >
@@ -41,7 +46,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div
-          className={`absolute top-0 right-0 bg-black text-white h-[199vh] xl:h-[140vh] ${display} transition-all ease-in-out duration-700 `}
+          className={`absolute top-0 right-0 bg-blue-400 text-white h-[199vh] xl:h-[140vh] ${display} transition-all ease-in-out duration-700  before:content-[''] before:absolute before:h-full before:w-[100vw]  before:bg-black before:opacity-[0.5] before:z-[-1] before:right-[200px] before:top-[0] shadow-inner `}
         >
           <div className="flex justify-end px-4 my-6">
             <CloseIcon
@@ -54,36 +59,94 @@ const Navbar = () => {
             />
           </div>
 
-          <ul className=" px-16 pb-6">
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Model S </li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Model 3</li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Model X </li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Model Y</li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Solar Roof</li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Solar Panels </li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">PowerWall</li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Shop</li>
-            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Account</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Existing Inventory </li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Used Inventory </li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Trade In</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Demo Drive</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Insurance</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Fleet</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Cybertruck</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Roadster</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Semi</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Charging</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Roadster</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Semi</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Charging</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Commercial Energy</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Utilities</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Carrers</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Find Us </li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Events</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Support</li>
-            <li className= " px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">Investor Relations </li>
+          <ul className=" px-16 pb-6 ">
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Model S{" "}
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Model 3
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Model X{" "}
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Model Y
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Solar Roof
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Solar Panels{" "}
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              PowerWall
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Shop
+            </li>
+            <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Account
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Existing Inventory{" "}
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Used Inventory{" "}
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Trade In
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Demo Drive
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Insurance
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Fleet
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Cybertruck
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Roadster
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Semi
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Charging
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Roadster
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Semi
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Charging
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Commercial Energy
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Utilities
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Carrers
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Find Us{" "}
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Events
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Support
+            </li>
+            <li className=" px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
+              Investor Relations{" "}
+            </li>
           </ul>
         </div>
       </nav>
