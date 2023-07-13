@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 function Model3() {
   return (
-    <div className=' h-[100vh]  bg-[url("/Model-3.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className=' w-[100vw]  bg-[url("/Model-3.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center carousel-item '>
         <div className='flex flex-col items-center mt-32 '>
             <h1 className=' font-semibold text-4xl'>Model 3</h1>
             <div className='flex flex-col justify-center items-center mt-3'>
@@ -11,8 +11,8 @@ function Model3() {
             </div>
         </div>
         <div className='mb-16'>
-        <Link  href='/' className={`  bg-white text-black font-semibold  px-6 py-2 rounded-lg mr-3 `}>Explore Inventory</Link>
-        <Link  href='/' className=' bg-black font-semibold text-white px-6 py-2 rounded-lg mr-3'>Custom Order </Link>
+        <Link  href='/' className={`  bg-white text-black font-semibold  px-6 py-2 rounded-lg mr-3 opacity-50 hover:opacity-100 duration-700 `}>Explore Inventory</Link>
+        <Link  href='/' className=' bg-black font-semibold text-white px-6 py-2 rounded-lg mr-3  opacity-50 hover:opacity-100 duration-700'>Custom Order </Link>
         </div>
 
     </div>
