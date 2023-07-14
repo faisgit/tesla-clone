@@ -11,10 +11,10 @@ const Navbar = () => {
 
   return (
     <div className=" font-bold">
-      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-16">
+      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-24 md:top-16">
         <div className="w-[100px] h-[30px] relative">
           <Link href="/">
-            <Image src={logo} alt="User Image" fill className="invert-[100]" />
+            <Image src={logo} alt="User Image" fill className="" />
           </Link>
         </div>
         <div>

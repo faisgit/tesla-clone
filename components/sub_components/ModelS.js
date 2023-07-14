@@ -8,9 +8,11 @@ function ModelS() {
             <h1 className=' font-semibold text-4xl'>Model S</h1>
             <Link  href='/' className='text-sm underline'>Explore Inventory </Link>
         </div>
-        <div className='mb-16'>
-        <Link  href='/' className=' bg-white font-bold text-slate-800 px-6 py-2 rounded-lg mr-3'>Custom Order </Link>
-        <Link  href='/' className={`  bg-black text-white font-bold  px-6 py-2 rounded-lg mr-3 `}>Demo Drive</Link>
+        
+
+        <div className='mb-16 flex flex-col md:flex-row justify-center items-center'>
+        <Link  href='/' className={`  bg-white text-black font-semibold  px-[4.5rem] py-2 mb-3 md:mb-0 mr-3 opacity-50 hover:opacity-100 duration-700 `}>Custom Order</Link>
+        <Link  href='/' className=' bg-black font-semibold text-white px-[5.3rem] py-2  mr-3  opacity-50 hover:opacity-100 duration-700'>Demo Drive </Link>
         </div>
 
     </div>
