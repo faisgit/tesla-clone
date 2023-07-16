@@ -2,25 +2,27 @@
 import * as React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../public/tesla-logo.svg";
+import logo from "../public/tesla-logo.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 const Navbar = () => {
+  const router = useRouter()
   const [display, setDisplay] = useState("hidden");
   const [position, setPosition] = useState("")
 
   return (
     <div className=" font-bold">
-      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-24 md:top-16">
-        <div className="w-[100px] h-[30px] relative">
-          <Link href="/">
+      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-24 md:top-3 text-black">
+        <div className=" w-[118px] h-[150px] relative ">
+          <Link href="/" className=''>
             <Image src={logo} alt="User Image" fill className="" />
           </Link>
         </div>
         <div>
           <ul className=" hidden xl:flex justify-between items-center">
-            <li className="mx-3">Model S </li>
-            <li className="mx-3">Model 3</li>
+            <li className="mx-3"><Link href='/about' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-lg'>Model S </Link> </li>
+            <li className="mx-3"><Link href='/model-3'>Model 3 </Link></li>
             <li className="mx-3">Model X </li>
             <li className="mx-3">Model Y</li>
             <li className="mx-3">Solar Roof</li>

@@ -8,9 +8,9 @@ function Solarroof() {
             <h1 className=' font-semibold text-4xl'>Solar Roofs</h1>
             <h1   className='text-sm'>Produce Clean Energy From Your Roof</h1>
         </div>
-        <div className='mb-16'>
-        <Link  href='/' className=' bg-white font-bold text-slate-800 px-6 py-2 rounded-lg mr-3 opacity-50 hover:opacity-100 duration-700'>Order Now </Link>
-        <Link  href='/' className={`  bg-black text-white font-bold  px-6 py-2 rounded-lg mr-3 opacity-50 hover:opacity-100 duration-700 `}>Learn More</Link>
+        <div className='mb-16 flex flex-col md:flex-row justify-center items-center'>
+        <Link  href='/' className={`  bg-white text-black font-semibold px-[5.5rem] py-2 mb-3 md:mb-0 mr-3 opacity-50 hover:opacity-100 duration-700 `}>Order Now</Link>
+        <Link  href='/' className=' bg-black font-semibold text-white px-[5.3rem] py-2  mr-3  opacity-50 hover:opacity-100 duration-700'>Learn More </Link>
         </div>
 
     </div>
