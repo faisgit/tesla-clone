@@ -3,7 +3,7 @@ import React from 'react'
 
 function ModelS() {
   return (
-    <div className=' w-[100vw]  bg-[url("/Model-S.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className=' w-[100vw]  bg-[url("/Home/Model-S.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
         <div className='flex flex-col items-center mt-32 '>
             <h1 className=' font-semibold text-4xl'>Model S</h1>
             <Link  href='/' className='text-sm underline'>Explore Inventory </Link>

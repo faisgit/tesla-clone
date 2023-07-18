@@ -1,4 +1,4 @@
-import Alert from "@/components/Alert (1)"
+import Alert from "@/components/Alert"
 import Navbar from "@/components/Navbar"
 export default function Layout({ children }) {
   return (

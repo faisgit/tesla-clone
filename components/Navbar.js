@@ -2,7 +2,7 @@
 import * as React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../public/tesla-logo.png";
+import logo from "../public/Home/tesla-logo.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
         <div className=" ml-9">
           <ul className=" hidden xl:flex justify-between items-center  ">
-            <li className="mx-3"><Link href='/about' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md'>Model S </Link> </li>
+            <li className="mx-3"><Link href='/model-s' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md'>Model S </Link> </li>
             <li className="mx-3"><Link href='/model-3' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md'>Model 3 </Link></li>
             <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Model X </Link></li>
             <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Model Y</Link></li>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div>
           <ul className="flex justify-between items-center">
             <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Shop</Link></li>
-            <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Account</Link></li>
+            <li className="mx-3 hidden xl:block"> <Link href='/sign-in' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Account</Link></li>
             <li
               className="mx-3 cursor-pointer px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md"
               onClick={() => {

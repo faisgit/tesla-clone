@@ -3,7 +3,7 @@ import React from 'react'
 
 function Powerwall() {
   return (
-    <div className=' w-[100vw]  bg-[url("/Powerwall.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className=' w-[100vw]  bg-[url("/Home/Powerwall.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
         <div className='mt-32 '>
             <h1 className=' font-semibold text-4xl text-center'>Powerwall</h1>
         </div>
