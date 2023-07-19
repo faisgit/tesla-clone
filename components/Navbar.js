@@ -12,30 +12,30 @@ const Navbar = () => {
   const [position, setPosition] = useState("")
 
   return (
-    <div className=" font-semibold ">
-      <nav className="flex justify-between items-center  py-3 px-6 bg-transperent fixed w-[100vw] top-9 md:top-4 z-[4] ">
-        <div className=" w-[118px] h-[150px] relative ">
+    <div className=" font-semibold text-white">
+      <nav className="flex justify-between items-center   px-6 py-3 bg-black/75 fixed w-[100vw] top-0  z-[4] ">
+        <div className=" w-[118px] h-[16px] relative  ">
           <Link href="/" className=''>
-            <Image src={logo} alt="User Image" fill className="" />
+            <Image src={logo} alt="User Image" fill className=' invert-[1]' />
           </Link>
         </div>
         <div className=" ml-9">
           <ul className=" hidden xl:flex justify-between items-center  ">
-            <li className="mx-3"><Link href='/model-s' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md'>Model S </Link> </li>
-            <li className="mx-3"><Link href='/model-3' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md'>Model 3 </Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Model X </Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Model Y</Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Solar Roof</Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Solar Panels </Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >PowerWall</Link></li>
+            <li className="mx-3"><Link href='/model-s' className =' px-2 py-2 '>Model S </Link> </li>
+            <li className="mx-3"><Link href='/model-3' className =' px-2 py-2 '>Model 3 </Link></li>
+            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Model X </Link></li>
+            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Model Y</Link></li>
+            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Solar Roof</Link></li>
+            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Solar Panels </Link></li>
+            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >PowerWall</Link></li>
           </ul>
         </div>
         <div>
           <ul className="flex justify-between items-center">
-            <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Shop</Link></li>
-            <li className="mx-3 hidden xl:block"> <Link href='/sign-in' className =' px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md' >Account</Link></li>
+            <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2' >Shop</Link></li>
+            <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2' >Account</Link></li>
             <li
-              className="mx-3 cursor-pointer px-2 py-2 hover:bg-black/20 hover:backdrop-blur-3xl duration-700 rounded-md"
+              className="mx-3 cursor-pointer px-2 py-2"
               onClick={() => {
                 if (display == "hidden") {
                   setDisplay("block");
@@ -48,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div
-          className={` absolute top-0 right-0 bg-white text-black h-[103vh]  transition-all ease-in-out duration-700 mt-[-36px]
+          className={` absolute top-0 right-0 bg-white text-black h-[100vh]  transition-all ease-in-out duration-700 
             before:content-[''] before:absolute before:h-full before:w-[100vw] ${display} before:bg-black before:opacity-[0.5] before:z-[-1] before:right-[300px] before:top-[0]  shadow-inner `}
         >
           <div className="flex justify-end px-4  my-6">
