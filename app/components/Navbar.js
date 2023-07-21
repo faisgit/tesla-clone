@@ -2,7 +2,7 @@
 import * as React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../public/Home/tesla-logo.png";
+
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
@@ -14,9 +14,9 @@ const Navbar = () => {
   return (
     <div className=" font-semibold text-white">
       <nav className="flex justify-between items-center   px-6 py-3 bg-black/75 fixed w-[100vw] top-0  z-[4] ">
-        <div className=" w-[118px] h-[16px] relative  ">
+        <div className=" w-[114px] h-[16px] relative  ">
           <Link href="/" className=''>
-            <Image src={logo} alt="User Image" fill className=' invert-[1]' />
+            <Image src='/Home/tesla-logo.png' alt="User Image" fill className=' invert-[1]' />
           </Link>
         </div>
         <div className=" ml-9">
