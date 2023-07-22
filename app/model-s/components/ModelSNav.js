@@ -7,8 +7,8 @@ function ModelSNav() {
         <div>
           <Link href="/model-s" className="font-bold">Model S</Link>
         </div>
-        <div >
-          <ul className="flex items-center  font-semibold text-sm">
+        <div className=" py-4" >
+          <ul className="flex flex-col  items-center ">
             <li className="mx-5">View Inventory</li>
             <li className="mx-5">Demo Drive</li>
             <li className="mx-5">Compare</li>
