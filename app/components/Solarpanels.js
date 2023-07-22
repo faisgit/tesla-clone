@@ -3,7 +3,7 @@ import React from 'react'
 
 function Solarpanels() {
   return (
-    <div className=' w-[100vw]  bg-[url("/Home/Solar-Panels.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className=' text-white w-[100vw]  bg-[url("/Home/Solar-Panels.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
         <div className='flex flex-col items-center mt-32 '>
             <h1 className=' font-semibold text-4xl'>Solar Panels</h1>
             <Link  href='/' className='text-sm underline'>Schedule a Virtual Consultation</Link>

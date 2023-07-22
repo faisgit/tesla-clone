@@ -1,44 +1,64 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
 function ModelSNav() {
-  const [display, setDisplay] = useState("hidden")
- 
+  const [display, setDisplay] = useState("hidden");
   return (
     <div>
-      <nav className={` ${display} lg:flex  justify-center lg:justify-between items-center px-4 absolute  top-64 lg:top-16 w-[100vw]  bg-black lg:bg-black/70 text-white py-3 lg:py-0 `}>
-        <div>
-          <Link href="/model-s" className="font-bold hidden lg:block">Model S</Link>
-        </div>
-        <div className={`  py-4 `} >
-          <ul className="flex flex-col lg:flex-row  items-center  ">
-            <li className="mx-5">View Inventory</li>
-            <li className="mx-5">Demo Drive</li>
-            <li className="mx-5">Compare</li>
-            <li className="mx-5 bg-slate-700 px-4 py-2 rounded-md ">Order Model S</li>
-          </ul>
-        </div>
+      <nav className=" hidden md:flex justify-between items-center fixed top-16 w-screen bg-black/50 text-white py-2 px-2">
+        <Link href="/model-s" className=" font-bold">
+          Model S
+        </Link>
+        <ul className="flex justify-center  items-center text-sm font-semibold">
+          <li className="mx-4">View Inventory</li>
+          <li className="mx-4">Demo Drive</li>
+          <li className="mx-4">Compare</li>
+          <li className="mx-4  bg-slate-600 px-3 py-2 rounded-lg text-bold">
+            Order Model S{" "}
+          </li>
+        </ul>
       </nav>
-        <div className="fixed block lg:hidden bg-red-700  right-1 top-[470px] text-black">
-          <Link href='/'>Model S</Link>
-          <br />
-          <button onClick={() => {
-                if (display == "hidden") {
-                  setDisplay("flex");
-                  setbtn('Close')
-                }
-                else{
-                  setDisplay("hidden")
-                 
-                }
-              }
-          }>
-            <KeyboardArrowDownIcon className={`${display}`} />
-            <KeyboardArrowUpIcon />
+      <div className="md:hidden">
+        <div className={` ${display} fixed bottom-0 w-screen bg-white text-black py-3 z-10`}>
+          <ul className="  flex flex-col justify-center items-center ">
+            <li className="py-2">Oder Model S</li>
+            <li className="py-2">Veiw Inventory</li>
+            <li className="py-2">Demo Drive</li>
+            <li className="py-2">Compare</li>
+          </ul>
+          <button
+            className="fixed right-2 bottom-3 bg-slate-600 text-white px-3 py-2 rounded-lg "
+          onClick={() => {
+            if (display == "block") {
+              setDisplay("hidden");
+            }
+          }}
+            >
+            <ExpandMoreIcon />
           </button>
         </div>
+        <div className="fixed bottom-3 right-2 flex items-center ">
+          <Link
+            href="/"
+            className="bg-slate-600 text-white px-3 py-2 rounded-lg mx-2 text-bold"
+            >
+            Order Model S
+          </Link>
+          <button
+            className="bg-slate-600 text-white px-3 py-2 rounded-lg"
+            onClick={() => {
+              if (display == "hidden") {
+                setDisplay("block");
+              }
+            }}
+          >
+            <ExpandLessIcon />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

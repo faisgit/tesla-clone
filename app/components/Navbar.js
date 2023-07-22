@@ -64,7 +64,7 @@ const Navbar = () => {
 
           <ul className=" px-16 overflow-y-auto h-[90vh] py-10">
             <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
-              Model S{" "}
+              <Link href='/model-s'>Model S</Link>
             </li>
             <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
               Model 3

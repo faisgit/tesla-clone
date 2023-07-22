@@ -3,7 +3,7 @@ import React from 'react'
 
 function Desktopacessories() {
   return (
-    <div className=' w-[100vw]  bg-[url("/Home/Desktop-Accessories.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className=' text-black/70 w-[100vw]  bg-[url("/Home/Desktop-Accessories.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
         <div className='flex flex-col items-center mt-32 '>
             <h1 className=' font-semibold text-4xl'>Accessories</h1>
         </div>

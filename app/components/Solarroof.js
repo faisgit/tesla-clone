@@ -3,7 +3,7 @@ import React from 'react'
 
 function Solarroof() {
   return (
-    <div className=' w-[100vw]  bg-[url("/Home/Solar-Roof.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className='text-black/70 w-[100vw]  bg-[url("/Home/Solar-Roof.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
         <div className='flex flex-col items-center mt-32 '>
             <h1 className=' font-semibold text-4xl'>Solar Roofs</h1>
             <h1   className='text-sm'>Produce Clean Energy From Your Roof</h1>
