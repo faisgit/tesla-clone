@@ -22,7 +22,7 @@ function ModelSNav() {
         </ul>
       </nav>
       <div className="md:hidden">
-        <div className={` ${display} fixed bottom-0 w-screen bg-white text-black py-3 z-10`}>
+        <div className={` ${display} fixed bottom-0 w-screen bg-white text-black py-3 z-50`}>
           <ul className="  flex flex-col justify-center items-center ">
             <li className="py-2">Oder Model S</li>
             <li className="py-2">Veiw Inventory</li>
@@ -40,7 +40,7 @@ function ModelSNav() {
             <ExpandMoreIcon />
           </button>
         </div>
-        <div className="fixed bottom-3 right-2 flex items-center ">
+        <div className="fixed bottom-3 right-2 flex items-center z-10 ">
           <Link
             href="/"
             className="bg-slate-600 text-white px-3 py-2 rounded-lg mx-2 text-bold"
