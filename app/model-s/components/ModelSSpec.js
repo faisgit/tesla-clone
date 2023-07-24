@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function ModelSSpec() {
   return (
-    <div className='text-white  h-[100vh]  bg-[url("/Home/Model-S.avif")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
+    <div className='text-white  h-[100vh]  bg-[url("/Model-S/tesla-model-s.jpg")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center '>
       <div className="flex flex-col items-center mt-32 ">
         <h1 className=" font-semibold text-4xl">Model S</h1>
         <Link href="/" className="text-sm underline">
