@@ -1,19 +1,25 @@
+"use client";
 import React from "react";
 import ModelSSpec from "./components/ModelSSpec";
-
-import dynamic from "next/dynamic";
 import ModelSExterior from "./components/ModelSExterior";
-
-const ModelSInterior = dynamic(() => import("./components/ModelSInterior"), {
-  ssr: false,
-});
+import ExperianceModelS from "./components/ExperianceModelS";
+import ModelSInterior from "./components/ModelSInterior";
+import { useEffect } from "react";
 function modelS() {
+  useEffect(() => {
+    const init = async () => {
+      const { Animate, initTE } = await import("tw-elements");
+      initTE({ Animate });
+    };
+    init();
+  }, []);
   return (
     <div>
       <div className="bg-black h-16" />
       <ModelSSpec />
       <ModelSInterior />
       <ModelSExterior />
+      <ExperianceModelS />
     </div>
   );
 }

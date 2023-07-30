@@ -1,17 +1,7 @@
-"use client";
 import React from "react";
-import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 function ModelSInterior() {
-  useEffect(() => {
-    const init = async () => {
-      const { Animate, initTE } = await import("tw-elements");
-      initTE({ Animate });
-    };
-    init();
-  }, []);
-
   return (
     <div className=" -mt-[18] bg-black text-white">
       <h1
