@@ -8,7 +8,7 @@ function ModelSNav() {
   const [display, setDisplay] = useState("hidden");
   return (
     <div>
-      <nav className=" hidden md:flex justify-between items-center fixed top-16 w-screen bg-black/50 text-white py-2 px-2">
+      <nav className=" hidden md:flex justify-between items-center fixed top-16 w-screen bg-black/50 text-white py-2 px-2 z-30">
         <Link href="/model-s" className=" font-bold">
           Model S
         </Link>

@@ -5,6 +5,7 @@ import ModelSExterior from "./components/ModelSExterior";
 import ExperianceModelS from "./components/ExperianceModelS";
 import ModelSInterior from "./components/ModelSInterior";
 import { useEffect } from "react";
+import ModelSFooter from "./components/ModelSFooter";
 function modelS() {
   useEffect(() => {
     const init = async () => {
@@ -20,6 +21,7 @@ function modelS() {
       <ModelSInterior />
       <ModelSExterior />
       <ExperianceModelS />
+      <ModelSFooter />
     </div>
   );
 }

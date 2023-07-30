@@ -3,13 +3,17 @@ import Link from "next/link";
 import Image from "next/image"
 function ExperianceModelS() {
   return (
-    <div className="bg-white text-black/80 flex flex-col lg:flex-row justify-between items-center">
+    <div className="bg-white text-black/80 flex flex-col lg:flex-row justify-between items-center border-none">
       <div className=" py-14 px-4 flex flex-col ">
         <h1 className=" font-medium text-3xl">Experience Model S</h1>
-        <p className="my-2">
+        <p className="mt-2 mb-5" >
           Design yours or request a callback from Tesla Advisor to learn more
         </p>
-        <div>
+        <div data-te-animation-init
+        data-te-animation-start="onScroll"
+        data-te-animation-on-scroll="repeat"
+        data-te-animation-reset="true"
+        data-te-animation="[fade-in-up_1s_ease-in-out]">
           <Link
             href=""
             className="border-2 border-solid border-black px-8 py-2 rounded-lg hover:bg-black hover:text-white duration-700 mr-4"
