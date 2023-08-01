@@ -2,34 +2,30 @@ import React from "react";
 import Link from "next/link";
 function Model3Spec() {
   return (
-    <div className={`text-white  h-[100vh]  bg-[url("/Model-3/tesla-model-3-home.jpg")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center before:content-[''] before:absolute before:top-0 before:bottom-0 Before:left-0 before:h-[100%] before:w-[100%] before:bg-black/70  `} >
+    <div className={`text-white  h-[100vh]  bg-[url("/Model-3/Model-3-Hero-Desktop-Home.jpg")] bg-no-repeat bg-center bg-cover flex flex-col justify-between items-center `} >
       <div className="flex flex-col items-center mt-32 ">
-        <h1 className=" font-semibold text-4xl">Model S</h1>
+        <h1 className=" font-semibold text-4xl">Model 3</h1>
         <Link href="/" className="text-sm underline">
           Explore Inventory{" "}
         </Link>
       </div>
       <div className="flex flex-col ">
-        <ul className="flex  justify-between items-center">
-          <li className="flex flex-col justify-center items-center  ">
-            <h1 className="  md:text-3xl  font-bold">396 mi</h1>
-            <h6 className="text-xs">Range (EPA est.)</h6>
+        <ul className="flex justify-between md:justify-normal  items-center">
+          <li className="flex flex-col justify-center items-center md:mx-10  ">
+            <h1 className="  md:text-3xl  font-bold">3.1s</h1>
+            <h6 className="text-xs">0-60 mph*</h6>
           </li>
-          <li className="flex flex-col justify-center items-center">
-            <h1 className="md:text-3xl font-bold">1.99 s</h1>
+          <li className="flex flex-col justify-center items-center md:mx-10">
+            <h1 className="md:text-3xl font-bold">333 mi</h1>
             <h6 className="text-xs">
-              0-60mph<sup>*</sup>
+            Range (EPA est.)
             </h6>
           </li>
-          <li className="flex flex-col justify-center items-center">
-            <h1 className="md:text-3xl font-bold">200 mph</h1>
+          <li className="flex flex-col justify-center items-center md:mx-10">
+            <h1 className="md:text-3xl font-bold">$32,740†</h1>
             <h6 className="text-xs">
-              Top Speed<sup>+</sup>
+            After Tax Credit
             </h6>
-          </li>
-          <li className=" hidden md:flex flex-col justify-center items-center">
-            <h1 className="text-3xl font-bold">1,020 hp</h1>
-            <h6 className="text-xs">Peak Power</h6>
           </li>
         </ul>
 
@@ -47,7 +43,7 @@ function Model3Spec() {
             Demo Drive{" "}
           </Link>
         </div>
-        <h6 className="text-sm text-center mt-3" >Specs displayed are Model S Plaid values.</h6>
+        <h6 className="text-xs text-center mt-3" >†Starting pre-tax price for Model 3 RWD after federal tax credit. <Link href={'/'} className="underline text-white/90 hover:text-white/100 duration-700"> Review Eligibility </Link></h6>
       </div>
     </div>
   );
