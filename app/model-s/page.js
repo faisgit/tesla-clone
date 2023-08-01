@@ -16,7 +16,6 @@ function modelS() {
   }, []);
   return (
     <div>
-      <div className="bg-black h-16" />
       <ModelSSpec />
       <ModelSInterior />
       <ModelSExterior />
