@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import WifiIcon from "@mui/icons-material/Wifi";
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 function Model3Interior() {
   return (
     <div>
@@ -13,7 +13,7 @@ function Model3Interior() {
           fill
         />
       </div>
-      <div className=" flex flex-col justify-between text-black ">
+      <div className=" absolute top-[55rem] lg:top-[45rem] lg:right-16 w-[95vw] lg:w-auto lg:h-96 flex lg:flex-col justify-between text-white  ">
         <div className="">
           <WifiIcon />
           <p>Over-the-air Updates</p>
