@@ -1,31 +1,48 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import WifiIcon from "@mui/icons-material/Wifi";
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
+import Link from "next/link";
 function Model3Interior() {
   return (
-    <div>
-      <div className="relative h-56 md:h-96   lg:h-screen">
-        <Image
-          src="/Model-3/Model-3-Interior-Hero-Desktop-LHD.avif"
-          alt="Image not found !"
-          fill
-        />
-      </div>
-      <div className=" absolute top-[55rem] lg:top-[45rem] lg:right-16 w-[95vw] lg:w-auto lg:h-96 flex lg:flex-col justify-between text-white  ">
-        <div className="">
+    <div className="bg-black">
+      <div
+        className={` h-96 md:h-[40rem] lg:h-screen bg-[url('/Model-3/Model-3-Interior-Hero-Desktop-LHD.avif')] bg-center bg-cover text-white flex lg:flex-col justify-between items-end  `}
+      >
+        <div
+          className="mb-10 lg:mb-0 mt-16 lg:mr-10 ml-4
+         md:ml-14 flex flex-col items-center lg:items-start "
+        >
           <WifiIcon />
-          <p>Over-the-air Updates</p>
+          <p className="text-center lg:text-left text-sm md:text-base ">
+            Over-the-air Updates
+          </p>
         </div>
-        <div className="">
-          <h6>15 inch</h6>
-          <p>Touchscreen Display</p>
+        <div className="mb-10 lg:mb-0 lg:mr-10 flex flex-col items-center lg:items-start">
+          <h5 className="font-bold md:text-2xl text-lg">15 Inch</h5>
+          <p className="text-center lg:text-left text-sm md:text-base">
+            Touchscreen Display
+          </p>
         </div>
-        <div className="">
-          <DirectionsCarIcon />
-          <p>All-Glass Roof </p>
+        <div className="mb-10 lg:mb-16 mr-6 md:mr-14 lg:mr-20 flex flex-col items-center lg:items-start">
+          <TimeToLeaveIcon />
+          <p className="text-center lg:text-left text-sm md:text-base">
+            All-Glass Roof
+          </p>
         </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row justify-between py-10 lg:px-28 text-white items-center ">
+        <div>
+          <h1 className="text-3xl font-semibold mb-10 lg:mb-3">Built Around the Driver</h1>
+          <Link href={"/"} className=" bg-transparent border-2 border-solid border-white px-7 py-2 hover:bg-white hover:text-black duration-700">
+            View Inventory{" "}
+          </Link>
+        </div>
+        <p className="relative bottom-7 lg:bottom-auto">
+          The inside of Model 3 is unlike any other vehicle with unrivaled
+          technology, premium materials and plenty of legroom.
+        </p>
       </div>
     </div>
   );
