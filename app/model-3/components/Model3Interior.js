@@ -3,6 +3,7 @@ import React from "react";
 import WifiIcon from "@mui/icons-material/Wifi";
 import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
 import Link from "next/link";
+import Image from "next/image";
 function Model3Interior() {
   return (
     <div className="bg-black">
@@ -32,14 +33,19 @@ function Model3Interior() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-between py-10 lg:px-28 text-white items-center ">
+      <div className="flex flex-col lg:flex-row justify-between py-10 px-5 sm:px-7 md:px-12 lg:px-28 text-white md:items-start lg:items-center  ">
         <div>
-          <h1 className="text-3xl font-semibold mb-10 lg:mb-3">Built Around the Driver</h1>
-          <Link href={"/"} className=" bg-transparent border-2 border-solid border-white px-7 py-2 hover:bg-white hover:text-black duration-700">
+          <h1 className="text-2xl md:text-3xl font-semibold mb-32 sm:mb-20 lg:mb-3">
+            Built Around the Driver
+          </h1>
+          <Link
+            href={"/"}
+            className="bg-transparent border-2 border-solid border-white px-7 py-2 hover:bg-white hover:text-black duration-700"
+          >
             View Inventory{" "}
           </Link>
         </div>
-        <p className="relative bottom-7 lg:bottom-auto">
+        <p className="relative bottom-36 sm:bottom-24 lg:bottom-auto ">
           The inside of Model 3 is unlike any other vehicle with unrivaled
           technology, premium materials and plenty of legroom.
         </p>
