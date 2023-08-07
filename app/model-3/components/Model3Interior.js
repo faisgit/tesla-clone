@@ -50,6 +50,22 @@ function Model3Interior() {
           technology, premium materials and plenty of legroom.
         </p>
       </div>
+
+      <div>
+        <div>
+          <div className="relative h-64 w-96">
+            <Image
+              src={"/Model-3/Model-3-Interior-Grid-1-Desktop-Global.avif"}
+              alt="Image not found"
+              fill
+            />
+          </div>
+          <div>
+            <h1>Glass Roof</h1>
+            <p>The expansive Glass Roof in Model 3 provides passengers with a brighter, more spacious experience—and a seamless view of the sky.</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
