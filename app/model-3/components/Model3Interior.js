@@ -51,8 +51,8 @@ function Model3Interior() {
         </p>
       </div>
 
-      <div>
-        <div className="flex flex-col  md:flex-row justify-between  md:items-center md:px-10 lg:px-14  xl:px-44 text-white">
+      <div className="flex flex-col justify-between">
+        <div className="flex flex-col  md:flex-row justify-between  md:items-center md:px-10 lg:px-14  xl:px-44 text-white mb-6">
           <div className="relative h-[15rem] sm:h-[20rem] w-[screen] md:h-56 lg:h-64 md:w-96 lg:w-[30rem] mb-3">
             <Image
               src={"/Model-3/Model-3-Interior-Grid-1-Desktop-Global.avif"}
@@ -62,9 +62,45 @@ function Model3Interior() {
           </div>
           <div className="w-96 pl-3 md:pl-4">
             <h1 className=" font-semibold text-3xl ">Glass Roof</h1>
-            <p>
+            <p className="font-medium">
               The expansive Glass Roof in Model 3 provides passengers with a
               brighter, more spacious experience—and a seamless view of the sky.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col  md:flex-row justify-between  md:items-center md:px-10 lg:px-14  xl:px-44 text-white mb-6">
+          <div className="relative h-[15rem] sm:h-[20rem] w-[screen] md:h-56 lg:h-64 md:w-96 lg:w-[30rem] mb-3">
+            <Image
+              src={"/Model-3/Model-3-Interior-Gallery-Weather-Desktop-LHD.avif"}
+              alt="Image not found"
+              fill
+            />
+          </div>
+          <div className="w-96 pl-3 md:pl-4">
+            <h1 className=" font-semibold text-3xl ">All-Weather Comfort</h1>
+            <p className="font-medium">
+              All-weather comfort system visualization of Model 3 All-Weather
+              Comfort Enhance comfort and convenience with heated seats, side
+              mirrors and steering wheel.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col  md:flex-row justify-between  md:items-center md:px-10 lg:px-14  xl:px-44 text-white mb-6">
+          <div className="relative h-[15rem] sm:h-[20rem] w-[screen] md:h-56 lg:h-64 md:w-96 lg:w-[30rem] mb-3">
+            <Image
+              src={"/Model-3/Model-3-Interior-Gallery-Sound-Desktop-LHD.avif"}
+              alt="Image not found"
+              fill
+            />
+          </div>
+          <div className="w-96 pl-3 md:pl-4">
+            <h1 className=" font-semibold text-3xl ">Sublime Sound</h1>
+            <p className=" font-medium">
+              Our premium audio system features 14 speakers, including a
+              subwoofer and dual amplifiers, for interior sound dynamics
+              comparable to a recording studio.
             </p>
           </div>
         </div>
