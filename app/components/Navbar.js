@@ -23,7 +23,7 @@ const Navbar = () => {
           <ul className=" hidden xl:flex justify-between items-center  ">
             <li className="mx-3"><Link href='/model-s' className =' px-2 py-2 '>Model S </Link> </li>
             <li className="mx-3"><Link href='/model-3' className =' px-2 py-2 '>Model 3 </Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Model X </Link></li>
+            <li className="mx-3"><Link href='/model-x' className =' px-2 py-2 ' >Model X </Link></li>
             <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Model Y</Link></li>
             <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Solar Roof</Link></li>
             <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Solar Panels </Link></li>
