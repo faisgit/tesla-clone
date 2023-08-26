@@ -2,44 +2,67 @@
 import * as React from "react";
 import { useState } from "react";
 import Image from "next/image";
-
 import CloseIcon from "@mui/icons-material/Close";
 import Link from "next/link";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 const Navbar = () => {
-  const router = useRouter()
+  const router = useRouter();
   const [display, setDisplay] = useState("hidden");
-  const [position, setPosition] = useState("")
+  const [position, setPosition] = useState("");
 
   return (
     <div className=" font-semibold text-white">
-      <nav className="flex justify-between items-center   px-6 py-3 bg-black/75 fixed w-[100vw] top-0  z-[4] ">
+      <nav className="flex justify-between items-center   px-6 py-3 xl:py-5 bg-black/75 fixed w-[100vw] top-0  z-[4] ">
         <div className=" w-[114px] h-[16px] relative  ">
-          <Link href="/" className=''>
-            <Image src='/Home/tesla-logo.png' alt="User Image" fill className=' invert-[1]' />
+          <Link href="/" className="">
+            <Image
+              src="/Home/tesla-logo.png"
+              alt="User Image"
+              fill
+              className=" invert-[1]"
+            />
           </Link>
         </div>
         <div className=" ml-9">
-          <ul className=" hidden xl:flex justify-between items-center  ">
-            <li className="mx-3"><Link href='/model-s' className =' px-2 py-2 '>Model S </Link> </li>
-            <li className="mx-3"><Link href='/model-3' className =' px-2 py-2 '>Model 3 </Link></li>
-            <li className="mx-3"><Link href='/model-x' className =' px-2 py-2 ' >Model X </Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Model Y</Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Solar Roof</Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >Solar Panels </Link></li>
-            <li className="mx-3"><Link href='/' className =' px-2 py-2 ' >PowerWall</Link></li>
+          <ul className=" hidden xl:flex justify-between items-center">
+            <li className="mx-3">
+              <Link href="/model-s" className=" px-2 py-2 ">
+                Model S{" "}
+              </Link>{" "}
+            </li>
+            <li className="mx-3">
+              <Link href="/model-3" className=" px-2 py-2 ">
+                Model 3{" "}
+              </Link>
+            </li>
+            <li className="mx-3">
+              <Link href="/model-x" className=" px-2 py-2 ">
+                Model X{" "}
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
           <ul className="flex justify-between items-center">
-            <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2' >Shop</Link></li>
-            <li className="mx-3 hidden xl:block"> <Link href='/' className =' px-2 py-2' >Account</Link></li>
+            <li className="mx-3 hidden xl:block">
+              {" "}
+              <Link href="/" className=" px-2 py-2">
+                Shop
+              </Link>
+            </li>
+            <li className="mx-3 hidden xl:block">
+              {" "}
+              <Link href="/account-sign-in" className=" px-2 py-2">
+                <AccountCircleIcon />
+              </Link>
+            </li>
             <li
-              className="mx-3 cursor-pointer px-2 py-2"
+              className="mx-3 cursor-pointer px-2 py-2 block xl:hidden"
               onClick={() => {
                 if (display == "hidden") {
                   setDisplay("block");
-                  setPosition("fixed")
+                  setPosition("fixed");
                 }
               }}
             >
@@ -62,9 +85,9 @@ const Navbar = () => {
             />
           </div>
 
-          <ul className=" px-16 overflow-y-auto h-[90vh] py-10">
+          <ul className=" px-16  overflow-y-auto h-[90vh] py-10">
             <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
-              <Link href='/model-s'>Model S</Link>
+              <Link href="/model-s">Model S</Link>
             </li>
             <li className="block xl:hidden  px-2 py-2  hover:bg-white hover:text-black transition-all ease-in-out duration-700 rounded-lg">
               Model 3
