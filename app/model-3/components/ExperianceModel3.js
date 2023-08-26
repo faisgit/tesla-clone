@@ -27,6 +27,7 @@ function ExperianceModel3() {
       <div className="relative h-80 w-screen lg:w-[35.5rem]">
         <Image
           src={"/Model-3/Model-3-Order-Desktop-Mobile-Global.avif"}
+          alt="Image not found"
           fill
         />
       </div>

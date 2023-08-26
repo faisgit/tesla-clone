@@ -1,7 +1,16 @@
+'use client';
 import React from "react";
 import Link from "next/link";
 import Image from "next/image"
+import { useEffect } from "react";
 function ExperianceModelS() {
+  useEffect(() => {
+    const init = async () => {
+      const { Animate, initTE } = await import("tw-elements");
+      initTE({ Animate });
+    };
+    init();
+  }, []);
   return (
     <div className="bg-white text-black/80 flex flex-col lg:flex-row justify-between items-center border-none">
       <div className=" py-14 px-4 flex flex-col ">
@@ -29,7 +38,7 @@ function ExperianceModelS() {
         </div>
       </div>
       <div className="relative h-80 w-screen lg:w-[35.5rem]" >
-        <Image src='/Model-S/Model-S-Order-Hero-Desktop-Mobile-LHD.avif' fill />
+        <Image src='/Model-S/Model-S-Order-Hero-Desktop-Mobile-LHD.avif' alt="Image Not Found" fill />
       </div>
     </div>
   );

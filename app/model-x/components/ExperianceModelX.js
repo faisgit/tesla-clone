@@ -29,7 +29,7 @@ function ExperianceModelX() {
         </div>
       </div>
       <div className="relative h-80 w-screen lg:w-[35.5rem]" >
-        <Image src='/Model-X/Model-X-Order-Desktop_Mobile-LHD.avif' fill />
+        <Image src='/Model-X/Model-X-Order-Desktop_Mobile-LHD.avif' alt="Image Not Found" fill />
       </div>
     </div>
   );

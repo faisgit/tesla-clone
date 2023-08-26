@@ -1,7 +1,16 @@
+'use client';
 import React from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 function ModelSExterior() {
+  useEffect(() => {
+    const init = async () => {
+      const { Animate, initTE } = await import("tw-elements");
+      initTE({ Animate });
+    };
+    init();
+  }, []);
   return (
     <div className="bg-black text-white pb-6">
       <div
@@ -16,7 +25,7 @@ function ModelSExterior() {
         </h1>
       </div>
       <div className="h-[90vh] relative z-1 pt-10 ">
-        <Image src="/Model-S/Model-S-Exterior-Hero-Desktop-Global.avif" fill />
+        <Image src="/Model-S/Model-S-Exterior-Hero-Desktop-Global.avif" alt="Image Not found" fill />
       </div>
 
       <div
@@ -82,7 +91,7 @@ function ModelSExterior() {
         >
           <Image
             src="/Model-S/Model-S-Exterior-Grid-A-Desktop-Global.avif"
-            alt=""
+            alt="Image Not Found"
             fill
           />
         </div>
@@ -97,7 +106,7 @@ function ModelSExterior() {
         >
           <Image
             src="/Model-S/Model-S-Exterior-Grid-B-Desktop-Global.avif"
-            alt=""
+            alt="Image not found"
             fill
           />
         </div>
@@ -140,7 +149,7 @@ function ModelSExterior() {
         >
           <Image
             src="/Model-S/Model-S-Exterior-Grid-C-Desktop-Global.avif"
-            alt=""
+            alt="Image Not Found "
             fill
           />
         </div>
